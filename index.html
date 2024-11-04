@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre entrega</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <h2 class="nav_title">EMG-TECH</h2>
+            </div>
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items">
+                    <i class="fa-solid fa-cart-shopping nav_items" id="cart-icon"></i>
+                </li>
+                <li class="nav_items">
+                    <a href="./pages/productos.html" class="nav_links">Productos</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#contacto" class="nav_links">Contacto</a>
+                </li>
+                <img src="./assets/img/xmark.svg" alt="imgClose" class="nav_close">
+            </ul>
+            <div class="nav_menu">
+                <img src="./assets/img/menu.svg" alt="imgMenu" class="nav_img">
+            </div>
+        </nav>
+        <section class="hero_container container">
+            <h1 class="hero_title">Bienvenidos a nuestra tienda online</h1>
+            <p class="hero_pharagraph">Donde encontrará los mejores productos al mejor precio.</p>
+            <a href="#contacto" class="cto">Contactanós !!</a>
+        </section>
+    </header>
+
+    <!-- MAIN SECCION -->
+    <main class="main container">
+        <section class="product container">
+            <h2 class="main-title">Nuestros Productos</h2>
+
+            <!-- CONTENIDO CARDS -->
+            <div class="cards-content">
+
+                <!-- CARD 1 -->
+                <div class="card">
+                    <img src="./assets/img/Categorias/Computacón.png" alt="" class="product-img">
+                    <p>Técnologia</p>
+                    <h2 class="product-title">La mas amplia variedad</h2>
+                    <a href="./pages/productos.html">
+                        <i class="fa-solid fa-play add-cart"></i>
+                    </a>
+                    
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card">
+                    <img src="./assets/img/Categorias/Joysticks.png" alt="" class="product-img">
+                    <p>Joysticks</p>
+                    <h2 class="product-title">de todas las consolas y pc</h2>
+                    <a href="./pages/productos.html">
+                        <i class="fa-solid fa-play add-cart"></i>
+                    </a>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card">
+                    <img src="./assets/img/Categorias/Relojes.png" alt="" class="product-img">
+                    <p>Relojes y Auriculares</p>
+                    <h2 class="product-title">Analogicos y digitales</h2>
+                    <a href="./pages/productos.html">
+                        <i class="fa-solid fa-play add-cart"></i>
+                    </a>
+                    
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="card">
+                    <img src="./assets/img/Categorias/Tecnología.png" alt="" class="product-img">
+                    <p>Computación</p>
+                    <h2 class="product-title">Lo último en Tecnologia</h2>
+                    <a href="./pages/productos.html">
+                        <i class="fa-solid fa-play add-cart"></i>
+                    </a>
+                    
+                </div>
+
+
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <section id="contacto" class="contacto-section">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/myzyzqwa" method="post" id="contactForm" ">
+            <input type="text" placeholder="Tú Nombre" name="name" required>
+            <input type="text" placeholder="Tú Apellido" name="lastname" required>
+            <input type="email" placeholder="Tú Correo electrónico" name="email" required>
+            <textarea placeholder="Dejanos un Mensaje" name="message" required></textarea>
+            <button type="submit" class="button-form">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Talento Tech - Todos los derechos reservados.</p><br>
+        <a class="readme" href="./README.txt.md" target="_blank">Readme</a>
+    </footer>
+
+
+
+
+    
+    <!-- <script src="./script/script.js"></script> -->
+    <script src="./script/menu.js"></script>
+</body>
+</html>
