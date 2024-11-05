@@ -108,7 +108,7 @@ body{
     text-align: center;
 }
 .hero_title{
-    font-size: 3rem;
+    font-size: 3.5rem;
     color:var(--text-color);
 }
 .hero_pharagraph{
@@ -154,6 +154,7 @@ body{
     padding: 10px;
     border: 2px solid var(--main-color);
 }
+
 .product-img{
     width: 100%;
     aspect-ratio: 1/1;
