@@ -67,7 +67,7 @@ body{
 }
 .nav_title{
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--text-color);
 }
 .nav_link{
@@ -81,6 +81,7 @@ body{
 .nav_items{
     list-style: none;
     color: var(--text-color);
+    font-size: 1.5rem;
 }
 .nav_items:hover{
     background-color: var(--color-title);
@@ -245,6 +246,7 @@ body{
     margin-bottom: 20px;
     color: var(--text-color);
     background-color: transparent;
+    font-size: 1.5rem;
 }
 .cto{
     display: inline-block;
