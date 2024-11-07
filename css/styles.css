@@ -15,11 +15,13 @@
 /*===========================*/
 
 /*========= VARIABLES ===========*/
+/*----- Colores ----------*/
 :root{
     --paddig-container:100px 0;
-    --color-title:#0e523a;
-    --main-color:#1da374;
+    --color-title:#333333;
+    --main-color:#16d4d4 ;
     --text-color:#fdfffc;
+    --bg-color:#acf8f8 ;
 }
 body{
     font-family:'Roboto', sans-serif;
@@ -49,7 +51,10 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--main-color);
+    background-image: url("../assets/img/Fondo2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: var(--main-color); */
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
 }
@@ -77,6 +82,13 @@ body{
     list-style: none;
     color: var(--text-color);
 }
+.nav_items:hover{
+    background-color: var(--color-title);
+    border: 1px solid var(--color-title);
+    border-radius: 5px;
+    padding: .5px;
+    transition: .4s;
+}
 
 .nav_links{
     color:var(--text-color);
@@ -95,14 +107,18 @@ body{
     display: var(--show, none);
 }
 
+
 /* ======== CART SECCION ========== */
 #cart-icon{
     font-size: 2rem;
     cursor: pointer;
-    color: var(--text-color);
+    color: var(--color-title);
+}
+#cart-icon:hover{
+    color:var(--text-color);
 }
 .cart{
-    position:absolute;
+    position:fixed;
     top: 0;
     right: 0;
     right: -100%;
@@ -228,30 +244,35 @@ body{
 .hero_pharagraph{
     margin-bottom: 20px;
     color: var(--text-color);
+    background-color: transparent;
 }
 .cto{
     display: inline-block;
-    background-color:var(--color-title);
+    background-color:var(--main-color);
     justify-self:center;
-    color: var(--text-color);
+    color:var(--color-title);
     text-decoration: none;
-    padding: 13px 30px;
+    padding: 10px 20px;
     border-radius: 5px;
+}
+.cto:hover{
+    background-color: var(--color-title);
+    color: var(--text-color);
 }
 
 /*======= SECCION MAIN =========*/
 .main{
     padding: 0 ;
-    /* background-color: aqua; */
+    background-color: var(--bg-color);
 }
 .main-title{
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
+    text-transform: uppercase;
     margin-bottom: 8rem;
     margin-top: 0;
-    background-color: var(--main-color);
-    color: var(--text-color);
+    color: var(--color-title);
 }
 .cards-content{
     display: grid;
@@ -259,8 +280,8 @@ body{
     gap: 1.5rem;
 }
 .card{
-    border: 10px solid var(--color-title);
-    position: relative;
+    border: 2px solid var(--color-title);
+    text-align: center;
     transition: .5s ease-in-out;
     background-color:var(--main-color);
 }
@@ -280,25 +301,26 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: .5rem;
-    color: var(--text-color);
+    color: var(--color-title);
 }
 .product-price{
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--color-title);
 }
 .add-cart{
-    position: absolute;
     bottom: 0;
     right: 0;
     background-color: var(--main-color);
-    color: var(--text-color);
-    padding: 11px;
+    color:var(--text-color);
+    padding: 10px;
     cursor: pointer;
     transition: .5s;
 }
 .add-cart:hover{
-    background: var(--main-color);
-    color: var(--color-title);
+    background:var(--text-color);
+    color:var(--color-title);
+    border: 1px solid var(--color-title);
+    border-radius: 5px;
 }
 
 
@@ -308,7 +330,7 @@ body{
     text-align: center;
 }
 .contacto-section h2,p{
-    color: var(--text-color);
+    color: var(--color-title);
     background-color: var(--main-color);
 }
 
@@ -346,29 +368,28 @@ body{
 
 
 
-
-
-
 /*======= FOOTER =========*/
 .footer {
     text-align: center;
     padding: 10px 0;
     background-color:var(--main-color);
-    color:var(--text-color);
-    position: relative;
+    color:var(--color-title);
     bottom: 0;
     width: 100%;
 }
 .readme{
-    color: var(--text-color);
+    color: var(--color-title);
     font-size: 1.2rem;
     font-weight: 600;
+}
+.readme:hover{
+    color: var(--text-color);
 }
 
 
 /* =========  MEDIA QUERIES  ========== */
 
-@media screen and (max-width:800px){
+@media(max-width:800px){
     .nav_menu{
         display: block;
     }
@@ -412,7 +433,7 @@ body{
     
 }
 
-@media screen and (max-width:600px){
+@media (max-width:600px){
     .hero_title{
         font-size: 2rem;
     }
