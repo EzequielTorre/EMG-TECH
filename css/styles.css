@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 /* ======= GLOBALES ======= */
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +21,8 @@
     --color-title:#333333;
     --main-color:#16d4d4 ;
     --text-color:#fdfffc;
-    --bg-color:#acf8f8 ;
+    --bg-color:#acf8f8;
+    --cart-color:#e21344;
 }
 body{
     font-family:'Roboto', sans-serif;
@@ -54,10 +55,10 @@ body{
     background-image: url("../assets/img/Fondo2.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-color: var(--main-color); */
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
 }
+
 /*======== NAV ============= */
 .nav{
     --padding-container:0;
@@ -67,7 +68,7 @@ body{
 }
 .nav_title{
     font-weight: 600;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--text-color);
 }
 .nav_link{
@@ -80,20 +81,22 @@ body{
 }
 .nav_items{
     list-style: none;
-    color: var(--text-color);
-    font-size: 1.5rem;
-}
-.nav_items:hover{
-    background-color: var(--color-title);
-    border: 1px solid var(--color-title);
-    border-radius: 5px;
-    padding: .5px;
-    transition: .4s;
+    font-size: 1.4rem;
 }
 
+.nav_items:hover{
+    background-color: var(--main-color);
+    border: 1px solid var(--color-title);
+    border-radius: 5px;
+    padding: 5px 5px;
+    transition: .4s;
+}
 .nav_links{
     color:var(--text-color);
     text-decoration: none;
+}
+.nav_links:hover{
+    color: var(--color-title);
 }
 .nav_menu{
     margin-left: auto;
@@ -113,10 +116,10 @@ body{
 #cart-icon{
     font-size: 2rem;
     cursor: pointer;
-    color: var(--color-title);
+    color:var(--text-color);
 }
 #cart-icon:hover{
-    color:var(--text-color);
+    color:var(--cart-color);
 }
 .cart{
     position:fixed;
@@ -141,7 +144,7 @@ body{
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 2rem;
-    color: var(--text-color);
+    color: var(--color-title);
 }
 .cart-box{
     display: grid;
@@ -163,24 +166,24 @@ body{
 .cart-product-title{
     font-size: 1rem;
     text-transform: uppercase;
-    color: var(--text-color);
+    color: var(--color-title);
 }
 .cart-price{
     font-weight: 400;
-    color: var(--text-color);
+    color: var(--color-title);
 }
 .cart-quantity{
     border: 1px solid var(--text-color);
     outline-color: var(--main-color);
-    width: 1.4rem;
+    width: 2rem;
     text-align: center;
     font-size: 1rem;
-    color: var(--text-color);
+    color: var(--color-title);
     background-color: var(--main-color);
 }
 .cart-remove{
     font-size: 24px;
-    color: var(--color-title);
+    color: var(--cart-color);
     cursor: pointer;
 }
 .total{
@@ -188,7 +191,7 @@ body{
     justify-content: flex-end;
     margin-top: 1.5rem;
     border-top: 1px solid var(--text-color);
-    color: var(--text-color);
+    color: var(--color-title);
 }
 .total-title{
     font-size: 1rem;
@@ -211,7 +214,7 @@ body{
     transition: .4s;
 }
 .btn-buy:hover{
-    background-color: var(--text-color);
+    background-color: var(--cart-color);
     color: var(--main-color);
     border: 1px solid var(--color-title);
 }
@@ -223,6 +226,10 @@ body{
     color: var(--text-color);
     cursor: pointer;
 }
+#cart-close:hover{
+    color: var(--cart-color);
+}
+
 /* ======== END CART SECCION ========== */
 
 
@@ -246,7 +253,7 @@ body{
     margin-bottom: 20px;
     color: var(--text-color);
     background-color: transparent;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .cto{
     display: inline-block;
@@ -254,18 +261,21 @@ body{
     justify-self:center;
     color:var(--color-title);
     text-decoration: none;
+    font-size:1.5rem;
+    font-weight: 600;
     padding: 10px 20px;
+    border: 1px solid var(--color-title);
     border-radius: 5px;
 }
 .cto:hover{
     background-color: var(--color-title);
     color: var(--text-color);
+    border: 1px solid var(--main-color);
 }
 
 /*======= SECCION MAIN =========*/
 .main{
     padding: 0 ;
-    background-color: var(--bg-color);
 }
 .main-title{
     font-size: 2rem;
@@ -313,7 +323,7 @@ body{
     bottom: 0;
     right: 0;
     background-color: var(--main-color);
-    color:var(--text-color);
+    color:var(--cart-color);
     padding: 10px;
     cursor: pointer;
     transition: .5s;
@@ -330,10 +340,11 @@ body{
 .contacto-section {
     padding: 20px;
     text-align: center;
+    background-color: var(--bg-color);
 }
 .contacto-section h2,p{
     color: var(--color-title);
-    background-color: var(--main-color);
+    font-size: 1.5rem;
 }
 
 .contacto-section form {
@@ -353,22 +364,20 @@ body{
 }
 .button-form{
     background-color: var(--main-color);
-    color:var(--text-color);
-    padding: 13px 30px;
+    color:var(--color-title);
+    padding: 10px 20px;
     text-decoration: none;
-    border: none;
+    border: 1px solid var(--color-title);
     border-radius: 10px;
     font-size: 1rem;
 }
 .button-form:hover{
-    background-color: var(--text-color);
-    color: var(--main-color);
-    border:1px solid var(--color-title);
-    transition: .7s ease-in-out;
-    font-weight: 700;
+    background-color: var(--color-title);
+    color: var(--text-color);
+    border:1px solid var(--main-color);
+    font-weight: 600;
+    cursor: pointer;
 }
-
-
 
 /*======= FOOTER =========*/
 .footer {
@@ -391,7 +400,7 @@ body{
 
 /* =========  MEDIA QUERIES  ========== */
 
-@media(max-width:800px){
+@media screen and (max-width:800px){
     .nav_menu{
         display: block;
     }
@@ -409,7 +418,6 @@ body{
         z-index: 100;
         opacity: 0;
         pointer-events: none;
-        transition: .7s opacity;
     }
     .nav_link--show{
         --show: block;
@@ -427,20 +435,32 @@ body{
         font-size: 2.5rem;
     }
     .hero_title{
-        font-size: 3rem;
+        font-size: 3.5rem;
+    }
+    .hero_pharagraph{
+        font-size: 1.5rem;
+    }
+    .cto{
+        font-size: 1rem;
     }
     .shop{
         margin-top: 2rem;
     }
+    .main-title{
+        font-size: 1.5rem;
+    }
     
 }
 
-@media (max-width:600px){
+@media screen and (max-width:600px){
     .hero_title{
-        font-size: 2rem;
+        font-size: 3rem;
     }
-    .hero_paragraph{
+    .hero_pharagraph{
         font-size: 1rem;
+    }
+    .cto{
+        font-size: .8rem;
     }
     .nav_title{
         font-size: 2rem;
