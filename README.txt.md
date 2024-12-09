@@ -1,13 +1,14 @@
 
-Pre-entrega: 
+ENTREGA FINAL:     TALENTO TECH 2024
 
-TALENTO TECH
+Alumno: TORRES EZEQUIEL MAURICIO GERMÁN.
+Profesor: Facundo Coronel.
+Tutor: Santiago Acosta.
+Comisión: 24228
 
-NOMBRE: TORRES EZEQUIEL MAURICIO GERMÁN
+Proyecto:   E-commerce de Productos Tecnológicos.
 
-E-commerce de Productos Tecnológicos.
-
-♦ -- Descripción del Proyecto:
+♦ -- Descripción del Proyecto --:
 
 Este T.P. es para un sitio web de comercio electrónico diseñado para
 ofrecer una amplia gama de productos tecnológicos. 
@@ -17,7 +18,7 @@ Además, se incluye un formulario de contacto para que los clientes puedan
 enviar consultas y recibir asistencia.
 
 
-♦ -- Características:
+♦ -- Características --:
 
 1_Catálogo de Productos:
 Navega por una variedad de productos tecnológicos, 
@@ -25,7 +26,7 @@ con descripciones detalladas y precios.
 
 2_Carrito de Compras: 
 Agrega productos al carrito y realiza la compra de
-manera sencilla.(En construcción para la entrega final).
+manera sencilla.
 
 3_Formulario de Contacto: 
 Permite a los usuarios enviar correos 
@@ -36,12 +37,18 @@ Diseñado para ser fácil de usar y accesible para
 todos los usuarios.
 
 5_Tecnologías Utilizadas:
-HTML, CSS: Para la estructura y el diseño de la página.
 
-JavaScript: Para la funcionalidad del carrito de compras, menú y la 
-interacción del usuario.(En construcción para la entrega final).
+* HTML, CSS: Para la estructura y el diseño de la página.
 
-Formspree: Para manejar y gestionar el envío de correos electrónicos.
+* JavaScript: Para la funcionalidad del carrito de compras,
+menú y la interacción del usuario.
+
+* Formspree: Para manejar y gestionar el envío de correos
+electrónicos.
+
+* Fontawesome: Para agregar iconos.
+
+Ref. Los precios de los productos son a modo de ejémplo.
 
 
 
